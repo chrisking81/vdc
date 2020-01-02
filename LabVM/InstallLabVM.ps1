@@ -29,7 +29,7 @@ ForEach ($ExtensionName in $Extensions)
 {cmd.exe /C "C:\Program Files\Microsoft VS Code\bin\code.cmd" --install-extension $ExtensionName}
 
 #Add LABVM UserId to docker group
-Add-LocalGroupMember -Member vdcadmin -Group docker-users
+Add-LocalGroupMember -Member chkin -Group docker-users
 
 #Reboot
 Restart-Computer
